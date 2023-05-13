@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Heebo", sans-serif;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: flex-start;
+  gap: 0;
+  background: url(./pink-background.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1000px;
+  padding: 7%;
+}
+article .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: right;
+  gap: 50px;
+  background-color: rgba(75, 75, 75, 0.74);
+  width: 547px;
+  height: 642px;
+  padding: 76px;
+}
+article .container .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: right;
+  gap: 30px;
+  text-align: center;
+}
+article .container .text h1 {
+  color: white;
+  font-size: 2rem;
+}
+article .container .text p {
+  color: white;
+  font-size: 1.25rem;
+}
+article .container .act {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  gap: 30px;
+}
+article .container .fields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  gap: 5px;
+}
+article .container .fields label {
+  color: white;
+  height: 24px;
+  font-weight: 800;
+}
+article .container .fields .field {
+  max-width: 418px;
+  height: 50px;
+  background: #F6F6F6 0% 0% no-repeat padding-box;
+  border-bottom: white solid 4px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+article .container [type=submit] {
+  width: 166px;
+  height: 50px;
+  border: none;
+  letter-spacing: 0.33px;
+  color: #FFFFFF;
+  background-color: magenta;
+  font-family: "Heebo", sans-serif, bold;
+  font-size: 1.47rem;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 705px) {
+  .text h1 {
+    font-size: 1.8rem !important;
+  }
+  .text p {
+    font-size: 1rem !important;
+  }
+  article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+    background-size: 150%;
+  }
+  .container {
+    padding: 50px !important;
+  }
+  .field {
+    height: 40px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
